@@ -7,10 +7,11 @@ let width = canvas.width = window.innerWidth
 let height = canvas.height = window.innerHeight
 const displayRatio = height / width
 
-const nStars = 800
+const nStars = 1024
 const stars = []
 const speedFactor = 0.05
 const vertexDistance = width / 16
+const margin = width / 12
 
 for (let i = 0; i < nStars; i++) {
   const dx = randomRange(-100, 100)
@@ -19,8 +20,8 @@ for (let i = 0; i < nStars; i++) {
 
   stars.push({
     id: Math.random(),
-    x: randomRange(0, width),
-    y: randomRange(0, height),
+    x: randomRange(-margin, width + margin),
+    y: randomRange(-margin, height + margin),
     radius: randomRange(1.5, 4),
     dx: dx / u,
     dy: dy / u,
@@ -76,10 +77,10 @@ function update() {
 
     const { x, y } = star
 
-    if (x < 0) star.x = width
-    if (y < 0) star.y = height
-    if (x > width) star.x = 0
-    if (y > height) star.y = 0
+    if (x < -margin) star.x = width + margin
+    if (y < -margin) star.y = height + margin
+    if (x > width + margin) star.x = -margin
+    if (y > height + margin) star.y = -margin
   })
 }
 
