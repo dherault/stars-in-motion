@@ -7,7 +7,7 @@ let width = canvas.width = window.innerWidth
 let height = canvas.height = window.innerHeight
 const displayRatio = height / width
 
-const nStars = 88
+const nStars = 800
 const stars = []
 const speedFactor = 0.05
 const vertexDistance = width / 16
