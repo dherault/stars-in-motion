@@ -1,0 +1,23 @@
+{
+  "name": "stars-in-motion",
+  "version": "0.0.0",
+  "description": "A canvas full of stars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dherault/stars-in-motion.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dherault/stars-in-motion/issues"
+  },
+  "homepage": "https://github.com/dherault/stars-in-motion#readme",
+  "devDependencies": {
+    "eslint": "^6.5.1",
+    "eslint-config-dherault": "^1.0.3"
+  }
+}

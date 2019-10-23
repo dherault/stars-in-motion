@@ -3,9 +3,8 @@ const _ = canvas.getContext('2d')
 
 // ra tio
 // vextex
-let width = canvas.width = window.innerWidth
-let height = canvas.height = window.innerHeight
-const displayRatio = height / width
+const width = canvas.width = window.innerWidth
+const height = canvas.height = window.innerHeight
 
 const nStars = 1024
 const stars = []
